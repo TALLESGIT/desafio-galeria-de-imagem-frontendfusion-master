@@ -88,7 +88,7 @@ export function NavBar({ themeToggler, theme }) {
 			</Flex>
 
 			<Spacer />
-			<C.Divider />
+			<C.Divider className="w-[100%] h-[1px]" />
 			<Spacer margin="8px" />
 
 			<Flex align="start">

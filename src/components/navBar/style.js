@@ -37,6 +37,6 @@ export const ListIcon = styled.li`
 `;
 
 export const Divider = styled.div`
- 
-  border: ${(props) => `1px solid ${props.theme.divider}`};
+
+border: ${(props) => `1px solid ${props.theme.divider}`};
 `;
