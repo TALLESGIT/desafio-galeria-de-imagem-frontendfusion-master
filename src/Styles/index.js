@@ -29,7 +29,7 @@ export const Flex = styled.div`
     flex-direction: ${props.direction || "column"};
     align-items: ${props.align || "center"};
     justify-content: ${props.justify || "center"};
-    gap: ${props.gap || "12px"};
+    gap: ${props.gap || "4px"};
     padding: ${props.padding || ""};
   `}
 `;
@@ -38,8 +38,7 @@ export const Typography = styled.p`
   ${(props) => css`
     font-style: ${props.style || "normal"};
     font-weight: ${props.weight || "500"};
-    font-size: ${props.size || "18px"};
-    line-height: ${props.height || "21px"};
+     line-height: ${props.height || "21px"};
     color: ${props.theme.textPrimary};
   `}
 `;
@@ -52,7 +51,7 @@ export const Spacer = styled.div`
 export const Button = styled.button`
   background-color: transparent;
   border: none;
-  cursor: pointer;
+  
 
   &:hover {
     opacity: 0.8;
