@@ -5,6 +5,7 @@ import { darkTheme, lightTheme } from "./Styles/theme";
 import { Stories } from "./components/Stories";
 import { Header } from "./components/header";
 import { NavBar } from "./components/navBar";
+import { Publications } from "./components/publications";
 
 export default function App() {
 	const [theme, setTheme] = useState("dark");
@@ -21,6 +22,7 @@ export default function App() {
 				<Flex gap="2px">
 					<Header />
 					<Stories />
+					<Publications />
 				</Flex>
 			</Screen>
 		</ThemeProvider>

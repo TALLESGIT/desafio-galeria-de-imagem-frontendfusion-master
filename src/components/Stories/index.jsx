@@ -1,13 +1,12 @@
-/* eslint-disable react/prop-types */
 import { useState } from "react";
 
 import { Button, Flex, Typography } from "../../Styles";
+
 import * as C from "./style";
 
-export function Stories({ photos }) {
+export function Stories() {
 	const [showAll, setShowAll] = useState(false);
-
-	photos = showAll ? photos : photos.slice(0, 10);
+	const numberArray = showAll ? 20 : 8;
 
 	function handleShowAll() {
 		setShowAll(!showAll);
@@ -21,14 +20,18 @@ export function Stories({ photos }) {
 			<Flex align="end">
 				<Button onClick={() => handleShowAll()}>
 					<Typography size="14px">
-						{showAll ? "Ver menos" : "Ver mais"}
+						{showAll ? "ver menos" : "Ver mais"}
 					</Typography>
 				</Button>
 
 				<C.Container>
-					{photos.map((photo) => (
-						<C.Profile key={photo?.id}>
-							<img src={photo?.src?.medium} alt="fotografia" />
+					{Array.from(Array(numberArray)).map((item, index) => (
+						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+						<C.Profile key={index}>
+							<img
+								src="https://avatars.githubusercontent.com/u/143969312?v=4"
+								alt="fotografia"
+							/>
 						</C.Profile>
 					))}
 				</C.Container>

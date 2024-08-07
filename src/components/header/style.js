@@ -32,8 +32,6 @@ export const Input = styled.input`
   &::placeholder {
     color: ${(props) => props.theme.textSecondary};
   }
-
- 
 `;
 
 export const ContainerActions = styled.div`

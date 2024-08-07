@@ -4,13 +4,13 @@ export const Container = styled.div`
     ${(props) => css`
     background-color: ${props.theme.primary};
     border: ${`1px solid ${props.theme.primary}`};
-    box-shadow: ${`10px 0px 13px 39px ${props.theme.boxShadow}`};
+    box-shadow: ${`9px 0px 33px 39px ${props.theme.boxShadow}`};
   `}
 `;
 
 export const BtnTheme = styled.button`
   color: ${(props) => props.theme.textPrimary};
-  cursor: pointer;
+  
 `;
 
 export const Profile = styled.div`
@@ -31,7 +31,7 @@ export const ListIcon = styled.li`
   align-items: center;
   gap: 12px;
   color: ${(props) => props.theme.textPrimary};
-  font-size: 16px;
+  font-size: 24px;
 
  
 `;

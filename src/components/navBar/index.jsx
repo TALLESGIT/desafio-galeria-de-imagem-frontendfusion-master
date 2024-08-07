@@ -44,7 +44,7 @@ export function NavBar({ themeToggler, theme }) {
 	}
 
 	return (
-		<C.Container className="w-[338px] h-[100vh] items-center flex flex-col p-5">
+		<C.Container className="w-[338px] h-[100vh] flex items-center flex-col p-5">
 			<Flex>
 				<C.BtnTheme
 					onClick={themeToggler}
@@ -57,9 +57,9 @@ export function NavBar({ themeToggler, theme }) {
 			<img src={LogoInstagram} alt="Instagran" />
 
 			<Flex>
-				<C.Profile className="relative w-[88px] h-[88px] rounded-full flex items-center justify-center">
+				<C.Profile className="relative w-[88px] h-[88px] rounded-[50%] flex items-center justify-center">
 					<img
-						className="w[82px] h-[82px] rounded-full"
+						className="w[82px] h-[82px] rounded-[50%]"
 						src="https://avatars.githubusercontent.com/u/143969312?v=4"
 						alt="imagem Tales"
 					/>
@@ -88,11 +88,11 @@ export function NavBar({ themeToggler, theme }) {
 			</Flex>
 
 			<Spacer />
-			<C.Divider className="w-[100%] h-[1px]" />
+			<C.Divider className="w[100%] h-[1px]" />
 			<Spacer margin="8px" />
 
 			<Flex align="start">
-				<C.ListIcon className="hover:opacity-80">
+				<C.ListIcon className="hover:opacity-70">
 					<BiExit />
 					<Typography>Sair</Typography>
 				</C.ListIcon>
