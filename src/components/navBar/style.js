@@ -31,7 +31,7 @@ export const ListIcon = styled.li`
   align-items: center;
   gap: 12px;
   color: ${(props) => props.theme.textPrimary};
-  font-size: 24px;
+  font-size: 16px;
 
  
 `;
